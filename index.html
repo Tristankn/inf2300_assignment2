@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todo-app">
+        <header class="app-header">
+            <p class="eyebrow">Personal tasks</p>
+            <h1>TODO List</h1>
+            <p class="subtitle">Keep track of the things you want to get done.</p>
+        </header>
+
+        <section class="todo-panel" aria-labelledby="todo-heading">
+            <h2 id="todo-heading">Your tasks</h2>
+
+            <form class="todo-form">
+                <label for="todoInput">New TODO item</label>
+                <div class="input-row">
+                    <input
+                        type="text"
+                        id="todoInput"
+                        name="todo"
+                        placeholder="What needs to be done?"
+                        autocomplete="off"
+                    >
+                    <button type="submit" id="addButton">Add</button>
+                </div>
+            </form>
+
+            <p id="errorMessage" class="error-message" role="alert" aria-live="polite"></p>
+
+            <ul id="todoList" class="todo-list" aria-live="polite">
+                <!-- TODO items will be rendered here. -->
+            </ul>
+
+            <div class="list-footer">
+                <span class="task-count" aria-hidden="true"></span>
+                <button type="button" id="clearButton" class="clear-button">Clear all</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
