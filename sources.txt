@@ -1,0 +1,5 @@
+Fetching:
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+Displaying the items:
+https://dev.to/eliastooloee/using-fetch-in-javascript-3i7c
