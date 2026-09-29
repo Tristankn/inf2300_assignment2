@@ -3,3 +3,12 @@ https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 Displaying the items:
 https://dev.to/eliastooloee/using-fetch-in-javascript-3i7c
+
+Deleting items: 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/DELETE
+
+Removing Items fron html ordered list:
+https://www.geeksforgeeks.org/javascript/how-to-remove-an-added-list-items-using-javascript/
+
+Put: 
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
