@@ -94,6 +94,32 @@ async function markCompleteToggle(completeButton) {
             completeButton.style.backgroundColor = "";
         }  
     }
+    // Handle cases where 400-series error code is returned by showing an error message and
+    // refreshing the DOM based on the servers stored data
+    else{
+        const errorBox = document.createElement("div");
+        const heading = document.createElement("h3");
+        const message = document.createElement("p");
+        heading.textContent = "Error";
+        message.textContent = "This item has been changed or does no longer exist.";
+        errorBox.style.backgroundColor = "#ffecec";
+        errorBox.style.border = "2px solid red";
+        errorBox.style.padding = "12px";
+        errorBox.style.margin = "12px 0";
+        errorBox.appendChild(heading);
+        errorBox.appendChild(message);
+        document.body.appendChild(errorBox);
+
+        setTimeout(() => {
+        errorBox.remove();
+        }, 5000);
+
+        const orderedList = document.getElementById("list");
+        orderedList.replaceChildren();
+
+        fetchItems();
+    }
+    
 
     
 }
